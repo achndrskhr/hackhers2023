@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #d5fafb;
+  /* Lighter shade for a softer look */
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: 'Courier', monospace;
+  color: #ac8693;
+  text-align: center;
+  /* Changed to a soft blue for a modern look */
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  color: #ac8693;
+  /* Matching the heading color for consistency */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  /* Makes radio buttons and checkboxes slightly larger */
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  /* Ensures it's clear the slider is interactive */
+}
+
+button {
+  display: inline-block;
+  background-color: #ac8693;
+  /* A green that stands out for the action button */
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  /* Adds rounded corners for a modern look */
+}
+
+button:hover {
+  background-color: #b46468;
+  /* A slightly darker green on hover for feedback */
+}
+
+#advice {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4e6eb;
+  /* A light yellow for contrast and attention */
+  border: 1px solid #ac8693;
+  color: #b46468;
+  /* Darker text for readability */
+  border-radius: 5px;
+  /* Rounded corners for the advice box */
+}
+
+input[type=range]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Adjusting label positioning for checkboxes and radios for better alignment */
+input[type=checkbox]+label,
+input[type=radio]+label {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  input[type=range],
+  button {
+    width: 100%;
+  }
+}

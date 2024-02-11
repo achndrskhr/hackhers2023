@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> "Dress Right" </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<h1> Dress Right</h1>
+
+<fieldset>
+  <legend>Are you wearing a top?</legend>
+  <label><input type="radio" name="wearingShirt" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingShirt" value="no"> No</label>
+</fieldset>
+<div id="shirtOptions" style="display:none;">
+  <!-- Sleeve Length for Shirt -->
+  <fieldset>
+    <legend>Sleeve Length:</legend>
+    <label><input type="radio" name="shirtSleeveLength" value="long"> Long</label>
+    <label><input type="radio" name="shirtSleeveLength" value="medium"> Medium</label>
+    <label><input type="radio" name="shirtSleeveLength" value="short"> Short</label>
+  </fieldset>
+</div>
+<div id="shirtMaterialOptions" style="display:none;">
+  <fieldset>
+    <legend>Shirt Material:</legend>
+    <label><input type="radio" name="shirtMaterial" value="thick"> Thick</label>
+    <label><input type="radio" name="shirtMaterial" value="medium"> Medium</label>
+    <label><input type="radio" name="shirtMaterial" value="thin"> Thin</label>
+  </fieldset>
+</div>
+
+<!-- Pants Question -->
+<fieldset>
+  <legend>Are you wearing bottoms?</legend>
+  <label><input type="radio" name="wearingPants" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingPants" value="no"> No</label>
+</fieldset>
+<div id="pantsOptions" style="display:none;">
+  <!-- Length for Pants -->
+  <fieldset>
+    <legend>Bottoms Length:</legend>
+    <label><input type="radio" name="pantsLength" value="long"> Long</label>
+    <label><input type="radio" name="pantsLength" value="medium"> Medium</label>
+    <label><input type="radio" name="pantsLength" value="short"> Short</label>
+  </fieldset>
+</div>
+<div id="pantsMaterialOptions" style="display:none;">
+  <fieldset>
+    <legend>Bottoms Material:</legend>
+    <label><input type="radio" name="pantsMaterial" value="thick"> Thick</label>
+    <label><input type="radio" name="pantsMaterial" value="medium"> Medium</label>
+    <label><input type="radio" name="pantsMaterial" value="thin"> Thin</label>
+  </fieldset>
+</div>
+
+
+<!-- Dress Question -->
+<fieldset>
+  <legend>Are you wearing a dress?</legend>
+  <label><input type="radio" name="wearingDress" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingDress" value="no"> No</label>
+</fieldset>
+<div id="dressOptions" style="display:none;">
+  <!-- Dress Length -->
+  <fieldset>
+    <legend>Dress Length:</legend>
+    <label><input type="radio" name="dressLength" value="long"> Long</label>
+    <label><input type="radio" name="dressLength" value="medium"> Medium</label>
+    <label><input type="radio" name="dressLength" value="short"> Short</label>
+  </fieldset>
+</div>
+<div id="dressMaterialOptions" style="display:none;">
+  <fieldset>
+    <legend>Dress Material:</legend>
+    <label><input type="radio" name="dressMaterial" value="thick"> Thick</label>
+    <label><input type="radio" name="dressMaterial" value="medium"> Medium</label>
+    <label><input type="radio" name="dressMaterial" value="thin"> Thin</label>
+  </fieldset>
+</div>
+
+<fieldset>
+  <legend>Are you wearing a jacket?</legend>
+  <label><input type="radio" name="wearingJacket" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingJacket" value="no"> No</label>
+</fieldset>
+<div id="jacketOptions" style="display:none;">
+  <!-- Jacket Material Options, hidden by default -->
+  <div id="jacketMaterialOptions" style="display:none;">
+    <fieldset>
+      <legend>Jacket Material:</legend>
+      <label><input type="radio" name="jacketMaterial" value="thick"> Thick</label>
+      <label><input type="radio" name="jacketMaterial" value="medium"> Medium</label>
+      <label><input type="radio" name="jacketMaterial" value="thin"> Thin</label>
+    </fieldset>
+  </div>
+</div>
+<!-- Hat Question -->
+<fieldset>
+  <legend>Are you wearing a hat?</legend>
+  <label><input type="radio" name="wearingHat" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingHat" value="no"> No</label>
+</fieldset>
+
+<!-- Gloves Question -->
+<fieldset>
+  <legend>Are you wearing gloves?</legend>
+  <label><input type="radio" name="wearingGloves" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingGloves" value="no"> No</label>
+</fieldset>
+
+<!-- Scarf Question -->
+<fieldset>
+  <legend>Are you wearing a scarf?</legend>
+  <label><input type="radio" name="wearingScarf" value="yes"> Yes</label>
+  <label><input type="radio" name="wearingScarf" value="no"> No</label>
+</fieldset>
+
+<button id="checkWeather">Check Weather</button>
+<div id="advice"></div>
+
+<script src="script.js"></script>
